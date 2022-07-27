@@ -29,7 +29,7 @@ const pool = new Pool({
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Express' })
 })
-//
+////
 router.get('/getlist'), function (req, res, next) {
     pool.connect((err, client, release) => {
         if (err) {
